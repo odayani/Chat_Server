@@ -21,7 +21,6 @@ int write_to_client(int sd, conn_pool_t *pool)
 
 void intHandler(int SIG_INT)
 
-Compile: 
-gcc chatServer.c -o <program_name>
-Run:
-./<program_name>
+Compile:   gcc chatServer.c -o <program_name>
+
+Run: ./<program_name>
