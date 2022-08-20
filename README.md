@@ -9,7 +9,8 @@ This project is simulates a chat server that handles connections of clients and 
 
 This program uses select function.
 
-## to run the chat server use the command :
+## How to run:
+Run the chat server with the command:
 ```
 gcc chatServer.c -o chatServer ./chatServer
 ```
