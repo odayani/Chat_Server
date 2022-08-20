@@ -1,24 +1,16 @@
-Name: Or Dayani
+Chat server - C language
 
-ChatServer.c
+Submitted files :
 
+chatServer.c - the chat server simulator code.
+READMY - exercise readme.
 
- --Functions--
- 
-:black_circle: int init_pool(conn_pool_t *pool)
+I created the var : iterator to check that i do not run more then needed iterations , means i checked at each iteratin if iterator is equals to the nReady that select function returned in each iteration.
 
-:black_circle: int add_conn(int sd, conn_pool_t *pool)
+This program uses select function.
 
-:black_circle: int remove_conn(int sd, conn_pool_t *pool)
+This project is simulates a chat server that handles connections of clients and manage the messeges between the clients.
 
-:black_circle: int push_message(conn_t* node, int len, char* buffer)
-
-:black_circle: int add_msg(int sd, char *buffer, int len, conn_pool_t *pool)
-
-:black_circle: int write_to_client(int sd, conn_pool_t *pool)
-
-:black_circle: void intHandler(int SIG_INT)
-
-
-Compile:   gcc chatServer.c -o <program_name>
-Run: ./<program_name>
+to run the chat server use the command : 
+gcc chatServer.c -o chatServer ./chatServer
+and then start telnets (enter localhost from browser) and connect to the port-number.
